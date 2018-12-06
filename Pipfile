@@ -10,6 +10,8 @@ setuptools = "*"
 sphinx = "*"
 sphinx-rtd-theme = "*"
 twine = "*"
+mypy = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.6"
@@ -17,3 +19,6 @@ python_version = "3.6"
 [scripts]
 apidoc = "sphinx-apidoc -f -o ./source ./hoge"
 build = "sphinx-build -a ./source ./docs"
+test = "python -m unittest discover -s ./tests -v"
+type = "mypy hoge"
+lint = "flake8 hoge tests"
