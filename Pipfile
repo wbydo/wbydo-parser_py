@@ -12,6 +12,7 @@ sphinx-rtd-theme = "*"
 twine = "*"
 mypy = "*"
 flake8 = "*"
+wbydo-parser = {editable = true,path = "."}
 
 [requires]
 python_version = "3.7"
@@ -20,5 +21,5 @@ python_version = "3.7"
 apidoc = "sphinx-apidoc -f -o ./source ./hoge"
 build = "sphinx-build -a ./source ./docs"
 test = "python -m unittest discover -s ./tests -v"
-type = "mypy hoge"
-lint = "flake8 hoge tests"
+type = "mypy wbydo_parser"
+lint = "flake8 wbydo_parser tests"
